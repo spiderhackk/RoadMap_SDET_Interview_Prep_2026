@@ -10,6 +10,7 @@ public class Remove_duplicate_elements_from_ArrayList {
             list.add(arr[i]);
 
         }
+
         List<Integer> items = list.stream().distinct().toList();
         return items;
     }

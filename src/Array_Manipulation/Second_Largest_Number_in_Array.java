@@ -1,4 +1,4 @@
-package Array_Manipulation;
+    package Array_Manipulation;
 
 import java.util.Arrays;
 
@@ -21,7 +21,7 @@ public class Second_Largest_Number_in_Array {
         return second_largest;
     }
     public static void main(String[] args) {
-        int [] arr  = {2,5,3,7,9,10,30};
+        int [] arr  = {2,5,3,7,10,9,30};
         System.out.println(secondLargest(arr));
 
 

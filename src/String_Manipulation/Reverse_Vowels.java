@@ -6,12 +6,12 @@ public class Reverse_Vowels {
         int left =0, right =str.length()-1;
         char [] ch = str.toCharArray();
         while (left<=right){
-            if(vowels.indexOf(ch[left])==-1 && vowels.indexOf(ch[right])==-1){
-                left++;
-                right--;
-
-            }
-            else if (vowels.indexOf(ch[right])==-1) {
+//            if(vowels.indexOf(ch[left])==-1 && vowels.indexOf(ch[right])==-1){
+//                left++;
+//                right--;
+//
+//            }
+             if (vowels.indexOf(ch[right])==-1) {
                 right--;
 
             }
@@ -32,7 +32,7 @@ public class Reverse_Vowels {
         return new String(ch);
     }
     public static void main(String[] args) {
-        String str = "Hello";
+        String str = "automation";
         System.out.println(reverseVowels(str));
     }
 }
