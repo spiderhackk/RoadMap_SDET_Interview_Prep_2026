@@ -3,20 +3,17 @@ package Array_Manipulation;
 public class Find_Peak_Number {
 
     public static int findPeak(int [] nums){
-        int left =0, right = nums.length-1;
-        while(left<right){
-            int mid = left+(right-left)/2;
-            if(nums[mid]<nums[mid+1]){
-                left=mid+1;
-            } else {
-                right = mid;
-
+        int idnex =0;
+        for (int i = 1; i < nums.length; i++) {
+            if(nums[i]>nums[i-1]){
+                idnex=  i;
             }
+
         }
-        return left;
+        return idnex;
     }
     public static void main(String[] args) {
-        int [] arr = {2,1};
+        int [] arr = {1,2,1,3,5,6,4};
         System.out.println(findPeak(arr));
     }
 
