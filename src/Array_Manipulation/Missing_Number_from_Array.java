@@ -4,15 +4,16 @@ import java.util.*;
 
 public class Missing_Number_from_Array {
     public static int missingNumber(int[] arr){
-        for (int i = 0; i <= arr.length; i++) {
-            int finalI = i;
-            boolean isMiss = Arrays.stream(arr).anyMatch(x->x== finalI);
-            if (!isMiss){
-                return finalI;
-            }
+        int sum=0;
+        int expectedSum=0;
 
+        int n=arr.length;
+        for (int i = 0; i < arr.length; i++) {
+          sum+=arr[i];
         }
-        return 0;
+        expectedSum = n*(n+1)/2 ;
+        System.out.println(n);
+        return expectedSum-sum;
     }
     public static void main(String[] args) {
         //
