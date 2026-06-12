@@ -12,7 +12,6 @@ public class Missing_Number_from_Array {
           sum+=arr[i];
         }
         expectedSum = n*(n+1)/2 ;
-        System.out.println(n);
         return expectedSum-sum;
     }
     public static void main(String[] args) {
